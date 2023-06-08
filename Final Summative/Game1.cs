@@ -62,12 +62,12 @@ namespace Final_Summative
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            while (screen == Screen.intro)
+            if (screen == Screen.intro)
             {
                 if (startButton.Contains(mouseState.X, mouseState.Y))
-                    colour = Color.Blue;
+                    //colour = Color.Blue;
                 if (exitButton.Contains(mouseState.X, mouseState.Y))
-                    colour = Color.Blue;
+                   // colour = Color.Blue;
                 if (mouseState.LeftButton == ButtonState.Pressed)
                     if (startButton.Contains(mouseState.X, mouseState.Y))
                     {
