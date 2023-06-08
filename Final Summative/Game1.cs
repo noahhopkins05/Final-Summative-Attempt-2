@@ -64,7 +64,10 @@ namespace Final_Summative
 
             while (screen == Screen.intro)
             {
- 
+                if (startButton.Contains(mouseState.X, mouseState.Y))
+                    colour = Color.Blue;
+                if (exitButton.Contains(mouseState.X, mouseState.Y))
+                    colour = Color.Blue;
                 if (mouseState.LeftButton == ButtonState.Pressed)
                     if (startButton.Contains(mouseState.X, mouseState.Y))
                     {
